@@ -55,8 +55,9 @@ sites = {
         domain_name     = "<domain>"
         subdomain_name  = "<subdomain>"
         bucket_name     = "<buckuc_name>"
-        aliases         = ["<domain_name>"]
+        aliases         = [ "<domain_name>" ]
         github_repo     = "<github_repo>"
+        github_branch   = [ "main", "develop" ]
         use_function    = true
     }
 }

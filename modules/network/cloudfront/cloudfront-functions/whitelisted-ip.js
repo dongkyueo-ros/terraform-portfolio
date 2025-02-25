@@ -5,8 +5,8 @@ function handler(event) {
     const clientIP = event.viewer.ip;
     
     const WHITELISTED_IP = [
-        '121.133.247.250',
-        '210.90.186.162',
+        '',
+        '',
     ];
     const shouldAllowIP = WHITELISTED_IP.includes(clientIP);
 

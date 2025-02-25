@@ -18,7 +18,7 @@ data "aws_iam_policy_document" "oidc_assume_role_policy" {
       test     = "StringLike"
       variable = "token.actions.githubusercontent.com:sub"
       values   = [
-        for branch in var.github_branch : "repo:${var.github_organizations}/${each.value.github_repo}:ref:refs/heads/${branch}"
+        for branch in [each.value.github_repo] : "repo:${var.github_organizations}/${each.value.github_repo}:ref:refs/heads/${branch}"
       ]
     }
 

@@ -24,15 +24,12 @@ variable "aws_cloudfront_distribution" {
 
 variable "sites" {
   type = map(object({
-    bucket_name = string
-    github_repo = string
+    bucket_name   = string
+    github_repo   = string
+    github_branch = list(string)
   }))
 }
 
 variable "github_organizations" {
   type = string
-}
-
-variable "github_branch" {
-  type = list(string)
 }

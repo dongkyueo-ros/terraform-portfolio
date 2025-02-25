@@ -188,5 +188,4 @@ module "github_role" {
   aws_cloudfront_distribution = module.cloudfront.aws_cloudfront_distribution
   website_bucket_release      = module.s3_bucket.website_bucket_release
   github_organizations        = local.github_organizations
-  github_branch               = local.github_branch
 }

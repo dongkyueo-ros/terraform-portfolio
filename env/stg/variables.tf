@@ -54,6 +54,7 @@ variable "sites" {
     aliases        = list(string)
     use_function   = bool
     github_repo    = string
+    github_branch  = list(string)
   }))
 }
 
